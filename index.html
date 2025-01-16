@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      textarea {
+        width: 100%;
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-tag-cloud.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="text-align:center; padding-top:15px;">
+          <h2>ECQ Analysis Tool</h2>
+          This tool allows you to self analyze your OPM executive resume or your OPM Executive Core Qualifications. To start, please paste your text in the box below. 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3>Enter data below:</h3>
+          <textarea rows="5"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h3>Proficiency Levels by ECQ:</h3>
+          <div id="info-panel"></div>
+        </div>
+        <div class="col-6">
+          <h3>Recommendations:</h3>
+          <div id="recommendation" style="width:100%; height:100%;"></div>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="text-align:center; padding-top:15px;">
+          <h3>Most Frequently Used Words</h3>
+        </div>
+      </div>
+
+      <div class="row" id="cloud-container" style = "height:350px">
+        <div class="col-12" id="cloud-panel" >
+      </div>
+     </div>
+      <div class="row" >
+        <div class="col-12" style="text-align:left; fomt-size: small; color:grey;" >
+        This tool was developed on personal time by TTS staff to encourage Diversity, Equity, Inclusion, Accessibility efforts in the federal government. Key contributors to this tool are <a href="https://www.linkedin.com/in/anil-neil-chaudhry/" target=_BALNK>Anil Chaudhry</a>, <a href="https://www.linkedin.com/in/adam-grandt-ht0/" target=_BLANK>Adam Grandt</a>, and <a href="https://www.linkedin.com/in/greg-walker-he-him-3041464/" target=_BLANK>Greg Walker</a>. Source code available upon request. 
+      </div>
+    </div>    
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
